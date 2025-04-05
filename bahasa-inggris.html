@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahasa Inggris</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-200 to-purple-300 text-gray-900">
+    <nav class="bg-white bg-opacity-50 shadow-md fixed w-full top-0 z-50 glassmorphism">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Website Edutrip</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-500">Home</a></li>
+                <li><a href="#articles" class="text-gray-700 hover:text-blue-500">Mata Pelajaran</a></li>
+                <li><a href="ppkn.html" class="text-gray-700 hover:text-blue-500">PPKN</a></li>
+                <li><a href="bahasa-indonesia.html" class="text-gray-700 hover:text-blue-500">Bahasa Indonesia</a></li>
+                <li><a href="bahasa-inggris.html" class="text-gray-700 hover:text-blue-500">Bahasa Inggris</a></li>
+                <li><a href="bahasa-mandarin.html" class="text-gray-700 hover:text-blue-500">Bahasa Mandarin</a></li>
+                <li><a href="agama.html" class="text-gray-700 hover:text-blue-500">Agama</a></li>
+                <li><a href="ips.html" class="text-gray-700 hover:text-blue-500">IPS</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="relative w-full h-64 bg-cover bg-center flex items-center justify-center" 
+        style="background-image: url('https://source.unsplash.com/1600x900/?english,language');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <h1 class="relative text-4xl font-bold text-white animate-fadeIn">Bahasa Inggris</h1>
+    </header>
+    
+    <section class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6 animate-fadeIn">Travel Article Mindmap</h2>
+        <p class="text-gray-700 max-w-2xl mx-auto animate-fadeIn">In english class we are told to create a mindmap for our chosen destination(Jiufen Old Street)</p>
+        
+        <div class="mt-8 animate-fadeIn">
+            <img src="Screenshot 2025-03-06 115343.png" alt="Learning English" class="mx-auto rounded-lg shadow-lg">
+        </div>
+    </section>
+</body>
+</html>

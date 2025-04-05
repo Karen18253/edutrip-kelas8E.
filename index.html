@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Edutrip</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn-animate {
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .btn-animate:hover {
+            transform: scale(1.05);
+            background: #facc15;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-200 to-purple-300 text-gray-900">
+    <nav class="bg-white bg-opacity-50 shadow-md fixed w-full top-0 z-50 glassmorphism">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Website Edutrip</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Home</a></li>
+                <li><a href="#articles" class="text-gray-700 hover:text-blue-500">Mata Pelajaran</a></li>
+                <li><a href="ppkn.html" class="text-gray-700 hover:text-blue-500">PPKN</a></li>
+                <li><a href="bahasa-indonesia.html" class="text-gray-700 hover:text-blue-500">Bahasa Indonesia</a></li>
+                <li><a href="bahasa-inggris.html" class="text-gray-700 hover:text-blue-500">Bahasa Inggris</a></li>
+                <li><a href="bahasa-mandarin.html" class="text-gray-700 hover:text-blue-500">Bahasa Mandarin</a></li>
+                <li><a href="agama.html" class="text-gray-700 hover:text-blue-500">Agama</a></li>
+                <li><a href="ips.html" class="text-gray-700 hover:text-blue-500">IPS</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="relative w-full h-screen bg-cover bg-center flex items-center justify-center" 
+        style="background-image: url(WhatsApp\ Image\ 2025-04-02\ at\ 21.09.07.jpeg);">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative text-center px-6 text-white animate-fadeIn">
+            <h1 class="text-6xl font-bold mb-4 justify-center">Petualangan Edutrip di Taiwan, Keelung</h1>
+
+    
+            
+            <a href="#articles" class="px-6 py-3 bg-yellow-500 text-white font-semibold rounded-lg shadow-md btn-animate">Mata Pelajaran</a>
+        </div>
+        
+        <div class="container mx-auto p-6">
+            <div class="bg-white shadow-lg rounded-lg p-6 overflow-hidden animate-fadeIn glassmorphism">
+                <p class="text-gray-700 text-justify animate-fadeIn">Pada petualangan edutrip kali ini, saya mengunjungi Taiwan di kota keelung. Disana saya melihat dan mengunjungi banyak destinasi yang menarik seperti Jiufen Old Street, Shifen Waterfall, Ximending Shopping District, National Palace Museum, dan juga mendapatkan kesempatan untuk mengunakan MRT di Taipei.
+                    Saya mendapatkan banyak pelajaran dan pengalaman  yang berharga seperti mendapatkan teman baru di Taiwan, bagaimana cara kita untuk mempedulikan dan membantu saudara kita yang mengalami kesusahan, dan nilai- nilai kehidupan yang dapat kita terapkan dari warga lokal Taiwan.
+                     Mengunjungi ke Negara Taiwan adalah pengalaman baru untuk saya, serta sebuah memori dan petualangan yang tidak akan saya lupakan.</p>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Galeri -->
+
+    <section id="gallery" class="py-16 px-6 text-center bg-gray-100">
+        <p class="text-blue-500 font-semibold text-lg">Di buat oleh Emanuela Karen Kusumariyadi 8E/12</p>
+        <h2 class="text-4xl font-bold mb-6 animate-fadeIn">Destinasi Favoritku</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="relative group">
+                <img src="WhatsApp Image 2025-03-26 at 16.42.13 (1).jpeg" alt="A-Mei Lantern Teahouse" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex justify-center items-center">
+                    <p class="text-white font-semibold text-lg">Jiufen Old Street</p>
+                </div>
+            </div>
+            <div class="relative group">
+                <img src="WhatsApp Image 2025-04-02 at 21.07.52.jpeg" alt="Rainbow House" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex justify-center items-center">
+                    <p class="text-white font-semibold text-lg">Rainbow Village</p>
+                </div>
+            </div>
+            <div class="relative group">
+                <img src="WhatsApp Image 2025-04-02 at 21.07.25.jpeg" alt="Narrow Alleyways in Shifen" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex justify-center items-center">
+                    <p class="text-white font-semibold text-lg">Shifen Old Street</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="py-16 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6 animate-fadeIn">Mata Pelajaran</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden animate-fadeIn glassmorphism">
+                <img src="PPkn.jpg" alt="PPKN" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">PPKN</h3>
+                    <p class="text-gray-700 mt-2">Pelajari tentang kewarganegaraan, hak, dan kewajiban sebagai warga negara.</p>
+                    <a href="ppkn.html" class="text-blue-500 font-semibold mt-4 inline-block">Baca Selengkapnya →</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden animate-fadeIn glassmorphism">
+                <img src="bahasa Indonesia.jpg" alt="Bahasa Indonesia" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">Bahasa Indonesia</h3>
+                    <p class="text-gray-700 mt-2">Jelajahi kekayaan bahasa dan sastra Indonesia.</p>
+                    <a href="bahasa-indonesia.html" class="text-blue-500 font-semibold mt-4 inline-block">Baca Selengkapnya →</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden animate-fadeIn glassmorphism">
+                <img src="cina.jpg" alt="Bahasa Mandarin" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">Bahasa Mandarin</h3>
+                    <p class="text-gray-700 mt-2">Pelajari Mandarin untuk memahami budaya dan komunikasi Tionghoa.</p>
+                    <a href="bahasa-mandarin.html" class="text-blue-500 font-semibold mt-4 inline-block">Baca Selengkapnya →</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden animate-fadeIn glassmorphism">
+                <img src="Agama.jpg" alt="Agama" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">Agama</h3>
+                    <p class="text-gray-700 mt-2">Pahami nilai-nilai dan ajaran berbagai agama untuk memperkaya spiritualitas Anda.</p>
+                    <a href="agama.html" class="text-blue-500 font-semibold mt-4 inline-block">Baca Selengkapnya →</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden animate-fadeIn glassmorphism">
+                <img src="english.jpg" alt="Bahasa Inggris" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">Bahasa Inggris</h3>
+                    <p class="text-gray-700 mt-2">Tingkatkan kemampuan bahasa Inggris Anda dengan materi yang komprehensif.</p>
+                    <a href="bahasa-inggris.html" class="text-blue-500 font-semibold mt-4 inline-block">Baca Selengkapnya →</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden animate-fadeIn glassmorphism">
+                <img src="ips.jpg" alt="IPS" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">IPS</h3>
+                    <p class="text-gray-700 mt-2">Jelajahi ilmu pengetahuan sosial untuk memahami dinamika masyarakat dan budaya.</p>
+                    <a href="ips.html" class="text-blue-500 font-semibold mt-4 inline-block">Baca Selengkapnya →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

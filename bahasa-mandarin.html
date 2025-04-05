@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahasa Mandarin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-purple-500 to-pink-500 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-white bg-opacity-50 shadow-md fixed w-full top-0 z-50 glassmorphism">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Website Edutrip</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-500">Home</a></li>
+                <li><a href="#articles" class="text-gray-700 hover:text-blue-500">Mata Pelajaran</a></li>
+                <li><a href="ppkn.html" class="text-gray-700 hover:text-blue-500">PPKN</a></li>
+                <li><a href="bahasa-indonesia.html" class="text-gray-700 hover:text-blue-500">Bahasa Indonesia</a></li>
+                <li><a href="bahasa-inggris.html" class="text-gray-700 hover:text-blue-500">Bahasa Inggris</a></li>
+                <li><a href="bahasa-mandarin.html" class="text-gray-700 hover:text-blue-500">Bahasa Mandarin</a></li>
+                <li><a href="agama.html" class="text-gray-700 hover:text-blue-500">Agama</a></li>
+                <li><a href="ips.html" class="text-gray-700 hover:text-blue-500">IPS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Header and Background Image -->
+    <header class="relative w-full h-80 flex items-center justify-center bg-cover bg-center" 
+        style="background-image: url('religion-bg.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <h1 class="relative text-5xl font-bold text-white animate-fadeIn">Bahasa Mandarin</h1>
+    </header>
+
+    <!-- New Section Above Main Image -->
+    <section class="container mx-auto px-6 py-16 text-center bg-white bg-opacity-80 rounded-lg shadow-lg mt-24">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">我的新好朋友 </h2>
+        <p class="text-lg text-gray-700 mb-6 text-justify">    我在台湾的时候,我交到了新朋友. 她的名字是Honey。 她今年 是十四岁。她的生日是六月二十二日。 她长得又漂亮又高。她的个子大概 1.6 米。她的嘴巴不大不小，鼻子很高，头发短短的。她的手很长。
+            她在 Fu Jen Sacred Heart School 学校读书, 上八年级。 她喜欢吃水果,最喜欢吃芒果.她的爱好是种植。我和她一起去九份逛街，我买奶茶，她买可丽饼。在学校我和她玩很多游戏。我最喜欢和她一起学习。我学了台湾文化, 她学了印尼文化。
+
+        </p>
+
+        <!-- Added Image below Heading -->
+        <div class="mb-6">
+            <img src="Honey.png" alt="Mandarin Language Image" class="w-1/2 h-auto rounded-lg shadow-lg mx-auto">
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="WhatsApp Image 2025-03-23 at 12.18.02 (1).jpeg" alt="我的好朋友" class="w-full h-full object-cover rounded-lg">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="WhatsApp Image 2025-03-23 at 12.17.44 (1).jpeg" alt="我和我的朋友们" class="w-full h-full object-cover rounded-lg">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="WhatsApp Image 2025-03-23 at 12.17.35 (1).jpeg" alt="我和我的朋友们" class="w-full h-full object-cover rounded-lg">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

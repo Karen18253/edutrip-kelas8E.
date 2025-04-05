@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahasa Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-red-200 to-yellow-300 text-gray-900">
+    <nav class="bg-white bg-opacity-50 shadow-md fixed w-full top-0 z-50 glassmorphism">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Website Edutrip</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-500">Home</a></li>
+                <li><a href="#articles" class="text-gray-700 hover:text-blue-500">Mata Pelajaran</a></li>
+                <li><a href="ppkn.html" class="text-gray-700 hover:text-blue-500">PPKN</a></li>
+                <li><a href="bahasa-indonesia.html" class="text-gray-700 hover:text-blue-500">Bahasa Indonesia</a></li>
+                <li><a href="bahasa-inggris.html" class="text-gray-700 hover:text-blue-500">Bahasa Inggris</a></li>
+                <li><a href="bahasa-mandarin.html" class="text-gray-700 hover:text-blue-500">Bahasa Mandarin</a></li>
+                <li><a href="agama.html" class="text-gray-700 hover:text-blue-500">Agama</a></li>
+                <li><a href="ips.html" class="text-gray-700 hover:text-blue-500">IPS</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="relative w-full h-80 flex items-center justify-center bg-cover bg-center parallax" 
+        style="background-image: url('image.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <h1 class="relative text-5xl font-bold text-white animate-fadeIn">Bahasa Indonesia</h1>
+    </header>
+    
+    <section class="py-16 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6 animate-fadeIn">Tugas AP Bahasa Indonesia "Membuat Teks Ulasan Hotel"</h2>
+        <p class="text-gray-700 max-w-2xl mx-auto animate-fadeIn">Dalam pelajaran Bahasa Indonesia kali ini, kami ditugaskan untuk membuat sebuah teks ulasan hotel dari pengalaman edutrip kami.</p>
+        
+        <div class="flex justify-center gap-4 mt-6">
+            <img src="Screenshot 2025-03-31 114710.png" alt="Ulasan Hotel Halaman Pertama" class="w-1/3 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="Screenshot 2025-03-31 114727.png" alt="Ulasan Hotel Halaman Kedua" class="w-1/3 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+        </div>
+        
+        <h3 class="text-3xl font-semibold mt-10 animate-fadeIn">Ulasan Hotel Fullon Taipei Bagian Timur</h3>
+        <p class="text-gray-800 mt-4 text-justify animate-fadeIn p-6 bg-white bg-opacity-80 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+            Saat Edutrip Taiwan berlangsung, saya menginap di salah satu hotel bernama Fullon Hotel, sebuah hotel berbintang empat yang lokasinya ada di Taipei bagian timur.
+             Hotel ini pertama kali beroperasi pada tahun 2010 dan didirikan oleh Wu Pao-Tien. Secara visual, hotel ini termasuk salah satu hotel terbesar yang saya kunjungi
+              dengan jumlah hingga 317 kamar serta berbagai fasilitas untuk pengunjung seperti kolam renang, ruang fitness, dan ballroom. Bangunan cokelat ini memiliki 
+              arsitektur yang elegan dengan desain yang menggabungkan elemen modern dan tradisional, sehingga menciptakan suasana mewah dan nyaman.
+        </p>
+        
+        <p class="text-gray-800 mt-4 text-justify animate-fadeIn p-6 bg-white bg-opacity-80 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+            Begitu tiba, saya langsung terkesan dengan lobi yang luas dan mewah. Lantainya berlapis marmer yang berkilau dan aneka souvenir tertata rapi di meja konter.
+             Setelah proses check-in, saya langsung bergegas mengunjungi kamar hotel. Kamar yang saya tempati sangat luas, terang, dan nyaman, sehingga cocok untuk menjadi tempat peristirahatan dari banyaknya perjalanan.
+              Tempat tidurnya juga sangat empuk dan lembut, dilengkapi oleh jendela besar yang memperlihatkan keadaan kota di luar. Fasilitas yang ditawarkan sudah mencukupi seperti TV, kulkas kecil, dan bathtub.
+        </p>
+        
+        <p class="text-gray-800 mt-4 text-justify animate-fadeIn p-6 bg-white bg-opacity-80 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+            Pelayanan hotel ini juga sangat memuaskan. Stafnya ramah dan sigap untuk membantu tamu. Saat masuk ke ruang makan, saya langsung disambut oleh karyawan yang ramah dan langsung diantarkan ke meja makan. 
+            Pilihan makanan cukup bervariasi, mulai dari makanan khas Tiongkok hingga barat. Ada berbagai hidangan utama seperti bihun goreng dan nasi goreng serta makanan tambahan di antaranya dumpling, nugget, dan kentang goreng. 
+            Buah-buahan serta sayuran terasa segar, dan hidangan daging cukup lezat.
+        </p>
+        
+        <p class="text-gray-800 mt-4 text-justify animate-fadeIn p-6 bg-white bg-opacity-80 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+            Namun ada beberapa hal yang menurut saya dapat diperhatikan. Meskipun fasilitas hotel sangat baik, saya merasa bahwa makanan kurang dari ekspektasi saya.
+             Beberapa makanan terasa hambar dan memiliki tekstur yang kurang pas, sehingga menimbulkan ketidaknyamanan saat makan. Kemudian kamar mandinya sangat licin 
+             dan lantainya sering basah akibat pintu yang kurang dapat menahan air.
+        </p>
+        
+        <p class="text-gray-800 mt-4 text-justify animate-fadeIn p-6 bg-white bg-opacity-80 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+            Secara kesimpulan, Hotel Fullon pasti cocok untuk wisatawan, bagi mereka yang berlibur bersama keluarga. Kamarnya luas, cukup menampung sekitar 3-4 orang. 
+            Hotel ini juga strategis untuk memudahkan wisatawan mengunjungi berbagai destinasi terkenal seperti Taipei 101 dan Taipei Zoo. 
+            Jika kalian berencana berwisata ke Taipei, silakan menginap di Hotel Fullon sebagai tempat menginap yang nyaman dan lengkap. Hotel Fullon ini memiliki keunikan dengan hotel lainnya yang saya kunjungi selama di Taiwan. Dari segi fisik, hotel ini berukuran lebih besar dibandingkan hotel lainnya yang saya kunjungi di Taiwan. Fasilitasnya lebih lengkap dan pelayanannya sangat ramah. Interior kamarnya elegan dan tertata dengan rapi.
+        </p>
+         
+    </section>
+    
+    <script>
+        gsap.from(".animate-fadeIn", {opacity: 0, y: 50, duration: 1, stagger: 0.3, scrollTrigger: {trigger: ".animate-fadeIn", start: "top 80%"}}); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-200 to-green-300 text-gray-900">
+    <nav class="bg-white bg-opacity-50 shadow-md fixed w-full top-0 z-50 glassmorphism">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Website Edutrip</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-500">Home</a></li>
+                <li><a href="#articles" class="text-gray-700 hover:text-blue-500">Mata Pelajaran</a></li>
+                <li><a href="ppkn.html" class="text-gray-700 hover:text-blue-500">PPKN</a></li>
+                <li><a href="bahasa-indonesia.html" class="text-gray-700 hover:text-blue-500">Bahasa Indonesia</a></li>
+                <li><a href="bahasa-inggris.html" class="text-gray-700 hover:text-blue-500">Bahasa Inggris</a></li>
+                <li><a href="bahasa-mandarin.html" class="text-gray-700 hover:text-blue-500">Bahasa Mandarin</a></li>
+                <li><a href="agama.html" class="text-gray-700 hover:text-blue-500">Agama</a></li>
+                <li><a href="ips.html" class="text-gray-700 hover:text-blue-500">IPS</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="relative w-full h-80 flex items-center justify-center bg-cover bg-center" 
+        style="background-image: url('religion-bg.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <h1 class="relative text-5xl font-bold text-white animate-fadeIn">Agama</h1>
+    </header>
+    
+    <section class="py-16 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6 animate-fadeIn">Refleksi Community Service</h2>
+         
+        <div class="relative w-full max-w-3xl mx-auto">
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img id="slide" src="WhatsApp Image 2025-04-02 at 21.20.41.jpeg" alt="Community Service" class="w-full">
+            </div>
+            <div class="flex justify-between mt-4">
+                <button onclick="prevSlide()" class="bg-gray-800 text-white px-4 py-2 rounded">&#10094;</button>
+                <button onclick="nextSlide()" class="bg-gray-800 text-white px-4 py-2 rounded">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        const images = ["WhatsApp Image 2025-04-02 at 21.20.41.jpeg","WhatsApp Image 2025-04-02 at 21.21.21.jpeg", "WhatsApp Image 2025-04-02 at 21.22.55.jpeg"];
+        let index = 0;
+        
+        function showSlide() {
+            document.getElementById("slide").src = images[index];
+        }
+        
+        function nextSlide() {
+            index = (index + 1) % images.length;
+            showSlide();
+        }
+        
+        function prevSlide() {
+            index = (index - 1 + images.length) % images.length;
+            showSlide();
+        }
+        
+        setInterval(nextSlide, 3000);
+    </script>
+    
+    <div class="container mx-auto p-6">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">Community Service Refleksi</h3>
+            <p class="text-gray-700">Ceritakan kegiatan-kegiatan COMMUNITY SERVICE yang telah kalian lakukan (tujuan dan cara pelaksanaan).</p>
+        </div>
+    </div>
+    
+    <div class="container mx-auto p-6">
+        <table class="table-auto w-full border border-gray-300">
+            <thead>
+                <tr class="bg-gray-300 text-left">
+                    <th class="border px-6 py-3">Rei-Ai Senior Citizens' Home</th>
+                    <th class="border px-6 py-3">Tzu Chi Resource Centre</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white">
+                <tr>
+                    <td class="border px-6 py-4"> Dalam rangkaian kegiatan community service, kami bersama siswa-siswi Taiwan memberikan sebuah pertunjukan istimewa untuk para kakek dan nenek di Ren-Ai Senior Citizens Home. 
+                            Kegiatan diawali dengan siswa Taiwan yang menari dan memainkan alat musik tradisional Taiwan (Hiusuan) di depan para kakek dan nenek. 
+                            Sementara itu, kami siswa-siswi Laurensia mempertunjukkan sebuah drama yang menarik dan menyenangkan. Kami bernyanyi bersama dan melakukan kegiatan ice-breaking sebelum akhirnya 
+                            mengucapkan selamat tinggal kepada mereka. Kegiatan ini merupakan pengalaman baru dan mengharukan bagi kita semua, bertujuan untuk mempererat moralitas dan solidaritas bagi orang-orang yang membutuhkan.</td>
+                    <td class="border px-6 py-4">  Di Tzu-Chi foundation, kami mempelajari program sosial dan lingkungan yang mereka jalankan selama bertahun-tahun. Program ini telah membantu banyak masyarakat di berbagai bagian dunia. 
+                            Mereka sangat mementingkan nilai kemanusian dan disana kita di ajarkan motivasi mereka untuk membantu sesama khususnya mereka yang membutuhkan.
+                             Mereka percahaya bahwa kebaikan tidak hanyak berasal dari orang yang kaya tapi semua hati nurani orang. Kami juga diajarkan bagaimana prinsip mengolah dan mendaur ulang sampah, agar bumi ini tetap hidup. 
+                             Kegiatan ini bertujuan agar semua dari kami dapat ikut terlibat dalam meningkatkan kesejahteraan dan kepudulian sesama serta bumi tercinta. </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<div class="container mx-auto p-6">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">Community Service Evaluasi</h3>
+            <p class="text-gray-700">Tuliskan evaluasi apakah tujuanmu tercapai dan apa tanggapan orang yang menjadi sasaran kegiatanmu!</p>
+        </div>
+    </div>
+
+<div class="container mx-auto p-6">
+        <table class="table-auto w-full border border-gray-300">
+            <thead>
+                <tr class="bg-gray-300 text-left">
+                    <th class="border px-6 py-3">Rei-Ai Senior Citizens' Home</th>
+                    <th class="border px-6 py-3">Tzu Chi Resource Centre</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white">
+                <tr>
+                   <td class="border px-6 py-4"> Tujuanku tercapai dalam kegiatan Ren-Ai Senior Citizens Home. Kami telah melalkukan banyak persiapan dan memberikan pertunjukan terbaik untuk para kakek dan nenek. 
+                            Mereka juga terlihat cukup terhibur oleh pertunjukan dan kegiatan yang telah kami dan siswa Taiwan lakukan. Mereka tersenyum dan lantas mengikuti setiap kegiatan walaupun dalam waktu yang sangat singkat.
+                            Kegiatan ini membantu kita semua untuk teringkat kembali untuk saling membantu sesama kita begitu pun yang lebih tua dari pada kita.</td>
+                    <td class="border px-6 py-4"> Tujuanku juga tercapai dalam Tzu-Chi Resource Centre. Saya belajar pentingnya kita membantu dan menghargai sesama kita yang kesulitan. 
+                            Kita juga belajar pentingnya mendaurulang samapah dengan adanya prinsip 5R. Kegiatan ini tidak hanya untuk menambahkan pengetahuan atau ilmu mengenai masalah-masalah yang terjadi dalam kehidupan sosial maupun lingkungan,
+                             namun untuk memberikan kesadaran dan mengerakan kami untuk tetap membantu dan peduli terhadap sesama kita dan bumi kita tersayang. 
+                             Para staff juga sangat ramah dan seru dalam menjelaskan materi dan memberikan sudut pandang baru untuk mengubah dunia menjadi versi yang lebih baik.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+  <div class="container mx-auto p-6">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">Murid Yesus: Menyangkal Diri</h3>
+            <p class="text-gray-700">Jelaskan bahwa kegiatan-KEGIATAN COMMUNITY SERVICE tersebut menjadi perwujudan syarat menjadi murid Yesus: menyangkal diri.</p>
+        </div>
+    </div>
+
+<div class="container mx-auto p-6">
+        <table class="table-auto w-full border border-gray-300">
+            <thead>
+                <tr class="bg-gray-300 text-left">
+                    <th class="border px-6 py-3">Rei-Ai Senior Citizens' Home</th>
+                    <th class="border px-6 py-3">Tzu Chi Resource Centre</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white">
+                <tr>
+                    <td class="border px-6 py-4">Kegiatan Ren-Ai Senior Citizens merupakan suatu acara yang memperlukan banyak persiapan dan kerjasama antar pihak. Dalam kegiatan tolong menolong 
+                           dan melaksanakan acara membutuhkan kesabaran dan kasih agar kami dapat mendengarkan dan berinteraksi bersama kakek dan nenek dengan sempurna dan memberikan hasil 
+                           dan pertunjukan yang terbaik untuk para kakek dan nenek. Menyingkirkan ego dan kepentingan kami agar dapat membahagiakan para kakek dan nenek merupakan perwujudan menjadi murid Yeusus: Menyangkal diri.</td>
+                    <td class="border px-6 py-4"> Di Tzu Chi Resource Centre kami di ajarkan beberapa hal mengenai berbelas kasih terhadap masyarakat yang membutuhkan maupun lingkungan sekitar. Untuk berbelas kasih dan
+                           juga menolong orang yang membutuhkan, kami memperlukan waktu dan tenaga yang besar, serta kerjasama yang kompak. Saat kami mengorbankan waktu dan tenaga, menunjukan bahwa
+                            kami mementingkan kepentingan orang lain diatas kepentingan pribadi. Oleh karena itu kegiatan tersebut menjadi perwujudan syarat menjadi murid Yesus: Menyangkal diri.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+  <div class="container mx-auto p-6">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">Murid Yesus: Memangul Salib</h3>
+            <p class="text-gray-700">Jelaskan bahwa kegiatan-KEGIATAN COMMUNITY SERVICE tersebut menjadi perwujudan syarat menjadi murid Yesus: memanggul salib.</p>
+        </div>
+    </div>
+
+<div class="container mx-auto p-6">
+        <table class="table-auto w-full border border-gray-300">
+            <thead>
+                <tr class="bg-gray-300 text-left">
+                    <th class="border px-6 py-3">Rei-Ai Senior Citizens' Home</th>
+                    <th class="border px-6 py-3">Tzu Chi Resource Centre</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white">
+                <tr>
+                    <td class="border px-6 py-4">Di Rei-Ai Senior Citizens' Home ada beberapa senior yang memiliki kesulitan untuk berinteraksi. Ditamabah kendala bahasa antara bahasa Indonesia dan bahasa mandarin.
+                          Namun hal ini tidak menjadikan alasan untuk kami menyerah untuk berparsitipasi dan berinteraksi dengan kakek dan nenek. Kita tetap mendampingi dan memberikan semangat,
+                           walaupun itu memperlukan pengorbanan tenaga dan kesabaran kami semua.</td>
+                    <td class="border px-6 py-4"> Membantu dan ikut berparsitipasi dalam kegiatan kemanusian, terkadang ada beberapa masalah yang akan kita hadapi (bencana alam,pelayanan sosial) yang menguras energi dan 
+                          persiapan mental agar dapat membantu membantu oranglain. Namun pengorbanan waktu dan tenaga itu sangatlah penting untuk menjaga kesejahteraan dan mentetapkan nilai kemanusian 
+                          bagi kalangan masyarakat yang mebutuhkan.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+  <div class="container mx-auto p-6">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">Murid Yesus: Mengikuti Yesus</h3>
+            <p class="text-gray-700">Jelaskan bahwa kegiatan-KEGIATAN COMMUNITY SERVICE tersebut menjadi perwujudan syarat menjadi murid Yesus: mengikuti Yesus.
+</p>
+        </div>
+    </div>
+
+<div class="container mx-auto p-6">
+        <table class="table-auto w-full border border-gray-300">
+            <thead>
+                <tr class="bg-gray-300 text-left">
+                    <th class="border px-6 py-3">Rei-Ai Senior Citizens' Home</th>
+                    <th class="border px-6 py-3">Tzu Chi Resource Centre</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white">
+                <tr>
+                    <td class="border px-6 py-4">Yesus mengajarkan kita untuk mengasihi saudara kita yang membutuhkan seperti para lansia. Memberikan pengalaman dan pertujukan yang terbaik agar dapat mengembirakan para kakek dan nenek merupakan
+                            cerminan mengikuti ajaran Yesus.</td>
+                    <td class="border px-6 py-4">Yesus membantu saudara kita yang lemah dan tersingkir. Maka dari itu, kita berparsitipasi dalam pembelajaran aksi sosial untuk berbagi bersama dan ikut mengulurkan tangan untuk membantu, sehingga 
+                          menciptakan kesejahteraan untuk kita semua.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  
+</body>
+</html>
